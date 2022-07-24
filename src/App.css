@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Shippori+Mincho:wght@400;500;600;700;800&display=swap');
+
+
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  background-color: #FAF8F6;
+  /* font-family: 'Poppins',
+    sans-serif; */
+  font-family: 'Shippori Mincho',
+    serif;
+  font-weight: 600;
+  box-sizing: border-box;
+}
+
+
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+
+:root {
+
+  /**
+   * colors
+   */
+
+  --orange: #F5683C;
+  --deep-blue: #19183A;
+  --grey: #73716F;
+  --white: #FFFEFF;
+  --purple: #A294CD;
+
+
+  /**
+   * typography
+   */
+
+  --ff-be-vietnam-pro: 'Be Vietnam Pro', sans-serif;
+
+  --fs-1: 1.875rem;
+  --fs-2: 1.5rem;
+  --fs-3: 1.063rem;
+
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+
+  /**
+   * transition
+   */
+
+  --transition: 0.25s ease;
+  --transition-2: 0.5s ease;
+
+  /**
+   * spacing
+   */
+
+  --section-padding: 60px;
+
+  /**
+   * border radius
+   */
+
+  --radius-4: 4px;
+  --radius-8: 8px;
+  --radius-12: 12px;
+}
+
+
+
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button {
+  background: none;
+  border: none;
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  width: 100%;
+}
+
+html {
+  font-family: var(--ff-be-vietnam-pro);
+  scroll-behavior: smooth;
+}
+
+/* body {
+  background: var(--white);
+} */

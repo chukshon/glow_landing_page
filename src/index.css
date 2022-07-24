@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Shippori+Mincho:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Shippori+Mincho:wght@400;500;600;700;800&display=swap');
+
 
 
 *,
@@ -6,12 +7,6 @@
 ::before {
     padding: 0;
     margin: 0;
-    background-color: var(--cream);
-    /* font-family: 'Poppins',
-    sans-serif; */
-    font-family: 'Shippori Mincho',
-        serif;
-    font-weight: 600;
     box-sizing: border-box;
 }
 
@@ -28,16 +23,22 @@
     --cream: #FAF8F6;
     --orange: #F5683C;
     --deep-blue: #19183A;
-    --grey: #73716F;
+    --grey: #4D4B4A;
     --white: #FFFEFF;
     --purple: #A294CD;
+    --light-orange: #FFE5DE;
 
 
     /**
    * typography
    */
 
-    --ff-be-vietnam-pro: 'Be Vietnam Pro', sans-serif;
+    --ff-roboto: 'Roboto',
+        sans-serif;
+    --ff-poppins: 'Poppins',
+        sans-serif;
+    --ff-shippori: 'Shippori Mincho',
+        serif;
 
     --fs-1: 1.875rem;
     --fs-2: 1.5rem;
@@ -67,6 +68,11 @@
     --radius-4: 4px;
     --radius-8: 8px;
     --radius-12: 12px;
+}
+
+
+body {
+    background-color: var(--cream);
 }
 
 

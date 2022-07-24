@@ -4,6 +4,7 @@ import About from './containers/about/About'
 import Faq from './containers/faq/Faq'
 import Hero from './containers/hero/Hero'
 import Stats from './containers/stats/Stats'
+import Testimonial from './containers/testimonial/Testimonial'
 import Trending from './containers/trending/Trending'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Trending />
       <Stats />
       <Faq />
+      <Testimonial />
     </>
   )
 }

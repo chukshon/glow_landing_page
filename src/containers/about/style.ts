@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
   }
 `
 export const StyledDetails = styled.div`
-  width: 850px;
+  width: 1000px;
   position: relative;
   background-color: #f1e3ef;
   display: flex;
@@ -22,7 +22,6 @@ export const StyledDetails = styled.div`
 `
 export const StyledContents = styled.div`
   width: 500px;
-
   h1 {
     color: var(--deep-blue);
     font-family: var(--shippori);

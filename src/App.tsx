@@ -1,8 +1,13 @@
 import React from 'react'
 import './App.css'
+import Header from './containers/header/Header'
 
 function App() {
-  return <h1>LindaT</h1>
+  return (
+    <>
+      <Header />
+    </>
+  )
 }
 
 export default App

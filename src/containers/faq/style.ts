@@ -1,7 +1,28 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
-  padding: 30px 100px;
+  padding: 100px 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 `
 
-export const StyledImg = styled.div``
+export const StyledImg = styled.div`
+  img {
+    width: 350px;
+    height: 450px;
+  }
+`
+export const StyledAccordion = styled.div`
+  h1 {
+    font-size: 2.5rem;
+    font-family: var(--ff-shippori);
+    font-weight: 500;
+    color: var(--deep-blue);
+    span {
+      color: var(--orange);
+    }
+  }
+  ul {
+    margin-top: 50px;
+  }
+`

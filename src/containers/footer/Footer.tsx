@@ -1,7 +1,83 @@
 import React from 'react'
+import {
+  Wrapper,
+  FooterGrid,
+  ContactCol,
+  QuickLinks,
+  FooterLogo,
+  SocialLinks,
+  Subscribe,
+  StyledForm,
+  Copyright,
+} from './style'
+
+import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa'
+import { FiSend } from 'react-icons/fi'
 
 const Footer = () => {
-  return <div>Footer</div>
+  return (
+    <Wrapper>
+      <FooterGrid>
+        <ContactCol>
+          <FooterLogo>
+            <h1>
+              Glow<span></span>
+            </h1>
+          </FooterLogo>
+          <p>
+            Keep Up With Our New Releases, Beauty Tips And What Emma's Been Up
+            To.
+          </p>
+          <SocialLinks>
+            <FaFacebookF />
+            <FaInstagram />
+            <FaTwitter />
+            <FaLinkedin />
+          </SocialLinks>
+        </ContactCol>
+        <QuickLinks>
+          <h3>Company</h3>
+          <ul>
+            <li>About</li>
+            <li>Jobs</li>
+            <li>Branding</li>
+            <li>Newsroom</li>
+          </ul>
+        </QuickLinks>
+        <QuickLinks>
+          <h3>Resources</h3>
+          <ul>
+            <li>About</li>
+            <li>Jobs</li>
+            <li>Branding</li>
+            <li>Newsroom</li>
+          </ul>
+        </QuickLinks>
+        <QuickLinks>
+          <h3>Terms &amp; Condition</h3>
+          <ul>
+            <li>About</li>
+            <li>Jobs</li>
+            <li>Branding</li>
+            <li>Newsroom</li>
+          </ul>
+        </QuickLinks>
+        <Subscribe>
+          <h3>Subscribe</h3>
+          <p>Get 10% off your first order</p>
+          <StyledForm>
+            <input type='text' placeholder='Enter your Email' />
+            <button type='submit'>
+              <FiSend />
+            </button>
+          </StyledForm>
+        </Subscribe>
+      </FooterGrid>
+      <Copyright>
+        <p>Copyright © 2022 Musemind | All rights reserved.</p>
+      </Copyright>
+    </Wrapper>
+  )
 }
 
 export default Footer

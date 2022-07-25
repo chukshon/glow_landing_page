@@ -2,6 +2,7 @@ import React from 'react'
 import './App.css'
 import About from './containers/about/About'
 import Faq from './containers/faq/Faq'
+import Footer from './containers/footer/Footer'
 import Hero from './containers/hero/Hero'
 import Partners from './containers/partners/Partners'
 import Portfolio from './containers/portfolio/Portfolio'
@@ -20,6 +21,7 @@ function App() {
       <Testimonial />
       <Partners />
       <Portfolio />
+      <Footer />
     </>
   )
 }

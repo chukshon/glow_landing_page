@@ -1,13 +1,18 @@
 import React from 'react'
 import Button from '../../components/button/Button'
 import Product from '../../components/product/Product'
-import { Wrapper } from './style'
+import { Wrapper, Content } from './style'
+import { staggerContainer, fadeUp } from '../../utils/variants'
 
 const Trending = () => {
   const list = [1, 2, 2, 4, 5]
   return (
-    <Wrapper>
-      <div className='content'>
+    <Wrapper
+      variants={staggerContainer}
+      initial='initial'
+      whileInView='whileInView'
+    >
+      <Content variants={fadeUp} initial='initial' whileInView='whileInView'>
         <h1>
           Trending On <span>Essentials</span>
         </h1>
@@ -16,7 +21,7 @@ const Trending = () => {
           ingredient.Fear of God Essentials.
         </p>
         <Button text='Browse All Products' transparent={true} />
-      </div>
+      </Content>
       {list.map((product, index) => {
         return <Product key={index} />
       })}

@@ -1,16 +1,17 @@
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
 export const Wrapper = styled.div`
   padding: 150px 100px 40px 100px;
   margin-top: -100px;
   background-color: var(--deep-blue);
 `
-export const FooterGrid = styled.div`
+export const FooterGrid = styled(motion.div)`
   display: flex;
   justify-content: space-between;
 `
 
-export const ContactCol = styled.div`
+export const ContactCol = styled(motion.div)`
   max-width: 220px;
   p {
     margin: 20px 0px;
@@ -44,7 +45,7 @@ export const SocialLinks = styled.div`
   color: var(--white);
 `
 
-export const QuickLinks = styled.div`
+export const QuickLinks = styled(motion.div)`
   display: flex;
   color: var(--white);
   flex-direction: column;
@@ -63,7 +64,7 @@ export const QuickLinks = styled.div`
     font-weight: 300;
   }
 `
-export const Subscribe = styled.div`
+export const Subscribe = styled(motion.div)`
   display: flex;
   flex-direction: column;
   gap: 1rem;

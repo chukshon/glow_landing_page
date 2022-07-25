@@ -3,6 +3,8 @@ import faqImg from '../../assets/images/faqImg.png'
 
 import { accordionData } from '../../utils/accordionData'
 import Accordion from '../../components/accordion/Accordion'
+import { staggerContainer, fadeUp } from '../../utils/variants'
+import { motion } from 'framer-motion'
 const Faq = () => {
   return (
     <Wrapper>
@@ -10,15 +12,23 @@ const Faq = () => {
         <img src={faqImg} alt='' />
       </StyledImg>
       <StyledAccordion>
-        <h1>
+        <motion.h1
+          variants={fadeUp}
+          initial='initial'
+          whileInView='whileInView'
+        >
           You have <span>questions,</span>
           <br /> we have answers.
-        </h1>
-        <ul>
+        </motion.h1>
+        <motion.ul
+          variants={staggerContainer}
+          initial='initial'
+          whileInView='whileInView'
+        >
           {accordionData.map((accordion) => {
             return <Accordion key={accordion.id} />
           })}
-        </ul>
+        </motion.ul>
       </StyledAccordion>
     </Wrapper>
   )

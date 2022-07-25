@@ -1,11 +1,11 @@
 import styled from 'styled-components'
-
-export const Wrapper = styled.div`
-  border-top: 1px solid red;
-  max-width: 350px;
+import { motion } from 'framer-motion'
+export const Wrapper = styled(motion.div)`
+  border-top: 1px solid #c0b4dd;
+  max-width: 400px;
   padding: 20px 0px;
   &:last-child {
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid #c0b4dd;
   }
   .title {
     display: flex;

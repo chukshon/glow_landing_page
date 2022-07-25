@@ -1,22 +1,25 @@
-import React, { useEffect, useRef } from 'react'
 import {
   Wrapper,
   StyledDetails,
   StyledContents,
   StyledGrid,
-  StyledContent,
+  StyledCol,
   TopImage,
   SideImage,
+  StyledStar,
+  StyledInner,
 } from './style'
 import topImageAbout from '../../assets/images/topImageAbout.webp'
+import { fadeUp, zoomIn } from '../../utils/variants'
+
 const About = () => {
   return (
     <Wrapper>
       <StyledDetails>
         <StyledContents
-          initial={{ x: '-100' }}
-          whileInView={{ x: '100' }}
-          viewport={{ once: true }}
+          variants={fadeUp}
+          initial='initial'
+          whileInView='whileInView'
         >
           <h1>
             The self care brand that's
@@ -28,7 +31,7 @@ const About = () => {
             products.
           </h1>
           <StyledGrid>
-            <StyledContent>
+            <StyledCol>
               <h3>
                 Where are Products
                 <br /> Made
@@ -37,8 +40,8 @@ const About = () => {
                 Many brands,especially in period
                 <br /> care,carry products that take centuries.
               </p>
-            </StyledContent>
-            <StyledContent>
+            </StyledCol>
+            <StyledCol>
               <h3>
                 Where are Products
                 <br /> Made
@@ -47,19 +50,24 @@ const About = () => {
                 Many brands,especially in period
                 <br /> care,carry products that take centuries.
               </p>
-            </StyledContent>
+            </StyledCol>
           </StyledGrid>
         </StyledContents>
-        <SideImage>
+        <SideImage
+          variants={zoomIn}
+          initial='initial'
+          whileInView='whileInView'
+          viewport={{ once: true }}
+        >
           <img src={topImageAbout} alt='' />
         </SideImage>
       </StyledDetails>
       <TopImage>
-        <div className='star'>
-          <div className='inner'>
+        <StyledStar>
+          <StyledInner>
             <h1 style={{ color: 'white' }}>New</h1>
-          </div>
-        </div>
+          </StyledInner>
+        </StyledStar>
         <img src={topImageAbout} alt='' />
       </TopImage>
     </Wrapper>

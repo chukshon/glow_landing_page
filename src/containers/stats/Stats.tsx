@@ -1,11 +1,28 @@
 import React from 'react'
-import { Wrapper, StyledContainer, StyledContent, StyledStats } from './style'
-import statsImg from '../../assets/images/statsImg.jpg'
+import {
+  Wrapper,
+  StyledContainer,
+  StyledContent,
+  StyledStats,
+  SideImg,
+} from './style'
+import test from '../../assets/images/test.jpeg'
+import {
+  fadeUp,
+  zoomIn,
+  fadeLeft,
+  staggerContainer,
+} from '../../utils/variants'
+import { motion } from 'framer-motion'
 const Stats = () => {
   return (
     <Wrapper>
       <StyledContainer>
-        <StyledContent>
+        <StyledContent
+          variants={fadeUp}
+          initial='initial'
+          whileInView='whileInView'
+        >
           <h1>
             We make going all <br />
             natural <span>Beauty</span>.
@@ -17,7 +34,11 @@ const Stats = () => {
             ingredient lists allow you to know.
           </p>
         </StyledContent>
-        <StyledStats>
+        <StyledStats
+          variants={fadeLeft}
+          initial='initial'
+          whileInView='whileInView'
+        >
           <div className='stats'>
             <h3>
               Product
@@ -40,9 +61,9 @@ const Stats = () => {
             <h1>5M</h1>
           </div>
         </StyledStats>
-        <div className='sideImg'>
-          <img src={statsImg} alt='' />
-        </div>
+        <SideImg variants={zoomIn} initial='initial' whileInView='whileInView'>
+          <img src={test} alt='' />
+        </SideImg>
       </StyledContainer>
     </Wrapper>
   )

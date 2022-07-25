@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
 export const Wrapper = styled.div`
   margin-top: 200px;
@@ -10,22 +11,9 @@ export const StyledContainer = styled.div`
   padding-bottom: 100px;
   padding-left: 100px;
   position: relative;
-  .sideImg {
-    position: absolute;
-    max-width: 400px;
-    max-height: 200px;
-    right: -170px;
-    top: 50px;
-    img {
-      border-top-left-radius: 50%;
-      border-top-right-radius: 50%;
-      width: 350px;
-      height: 450px;
-    }
-  }
 `
 
-export const StyledContent = styled.div`
+export const StyledContent = styled(motion.div)`
   h1 {
     font-family: var(--ff-shippori);
     font-size: 2.4rem;
@@ -43,7 +31,7 @@ export const StyledContent = styled.div`
   }
 `
 
-export const StyledStats = styled.div`
+export const StyledStats = styled(motion.div)`
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -108,5 +96,18 @@ export const StyledStats = styled.div`
       color: var(--orange);
       text-align: center;
     }
+  }
+`
+export const SideImg = styled(motion.div)`
+  position: absolute;
+  max-width: 400px;
+  max-height: 200px;
+  right: -170px;
+  top: 50px;
+  img {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    width: 350px;
+    height: 450px;
   }
 `

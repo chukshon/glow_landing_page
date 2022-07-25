@@ -1,12 +1,20 @@
 import React from 'react'
 import { Wrapper, Container } from './style'
 import { ImQuotesLeft } from 'react-icons/im'
-import testimonialsImg from '../../assets/images/testimonialsImg.jpg'
+import test from '../../assets/images/test.jpeg'
+import Slider from 'react-slick'
+import { fadeLeft, zoomIn } from '../../utils/variants'
+import { motion } from 'framer-motion'
+// Import Swiper React components
 
 const Testimonial = () => {
   return (
     <Wrapper>
-      <Container>
+      <Container
+        variants={fadeLeft}
+        initial='initial'
+        whileInView='whileInView'
+      >
         <ImQuotesLeft />
         <h3>
           The UK jewellery awards is an event we always look forward to and we
@@ -15,7 +23,13 @@ const Testimonial = () => {
 
         <h5>Jane Cooper</h5>
         <p>Naperville, USA</p>
-        <img src={testimonialsImg} alt='' />
+        <motion.img
+          variants={zoomIn}
+          initial='initial'
+          whileInView='whileInView'
+          src={test}
+          alt=''
+        />
       </Container>
     </Wrapper>
   )

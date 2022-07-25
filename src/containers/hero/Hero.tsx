@@ -4,6 +4,7 @@ import { Wrapper, HeroGrid, HeroContent } from './style'
 import lady1 from '../../assets/images/lady1.png'
 import heroImg from '../../assets/images/heroImg.png'
 import Button from '../../components/button/Button'
+import { IoIosPlay } from 'react-icons/io'
 
 const Hero = () => {
   return (

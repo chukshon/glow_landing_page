@@ -13,12 +13,22 @@ import {
 
 import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa'
 import { FiSend } from 'react-icons/fi'
+import {
+  fadeUp,
+  zoomIn,
+  fadeLeft,
+  staggerContainer,
+} from '../../utils/variants'
 
 const Footer = () => {
   return (
     <Wrapper>
-      <FooterGrid>
-        <ContactCol>
+      <FooterGrid
+        variants={staggerContainer}
+        initial='initial'
+        whileInView='whileInView'
+      >
+        <ContactCol variants={fadeUp}>
           <FooterLogo>
             <h1>
               Glow<span></span>
@@ -35,7 +45,7 @@ const Footer = () => {
             <FaLinkedin />
           </SocialLinks>
         </ContactCol>
-        <QuickLinks>
+        <QuickLinks variants={fadeUp}>
           <h3>Company</h3>
           <ul>
             <li>About</li>
@@ -44,7 +54,7 @@ const Footer = () => {
             <li>Newsroom</li>
           </ul>
         </QuickLinks>
-        <QuickLinks>
+        <QuickLinks variants={fadeUp}>
           <h3>Resources</h3>
           <ul>
             <li>About</li>
@@ -53,7 +63,7 @@ const Footer = () => {
             <li>Newsroom</li>
           </ul>
         </QuickLinks>
-        <QuickLinks>
+        <QuickLinks variants={fadeUp}>
           <h3>Terms &amp; Condition</h3>
           <ul>
             <li>About</li>
@@ -62,7 +72,7 @@ const Footer = () => {
             <li>Newsroom</li>
           </ul>
         </QuickLinks>
-        <Subscribe>
+        <Subscribe variants={fadeUp}>
           <h3>Subscribe</h3>
           <p>Get 10% off your first order</p>
           <StyledForm>

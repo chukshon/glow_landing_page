@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-
+import { motion } from 'framer-motion'
 export const IconGroup = styled.div`
   position: absolute;
   bottom: 30px;
@@ -10,7 +10,7 @@ export const IconGroup = styled.div`
   flex-direction: column;
   gap: 1rem;
 `
-export const Wrapper = styled.div`
+export const Wrapper = styled(motion.div)`
   max-width: 350px;
   position: relative;
   max-height: 350px;

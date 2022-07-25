@@ -1,6 +1,6 @@
 import React from 'react'
 import NavBar from '../../components/navbar/NavBar'
-import { Wrapper, HeroGrid, HeroContent } from './style'
+import { Wrapper, HeroGrid, HeroContent, ButtonGrid } from './style'
 import lady1 from '../../assets/images/lady1.png'
 import heroImg from '../../assets/images/heroImg.png'
 import Button from '../../components/button/Button'
@@ -12,18 +12,24 @@ const Hero = () => {
       <NavBar />
       <HeroGrid>
         <HeroContent>
-          <h2>
+          <h2 className='h1'>
             Let your skin
             <br /> Going
             <img src={heroImg} alt='' />
             Out.
           </h2>
-          <p>
+          <p className='grey_p'>
             We want to bring to the world through our
             <br /> products that very special feeling joy, healthy and
             <br /> positive energy.
           </p>
-          <Button text='Shop Now' transparent={false} />
+          <ButtonGrid>
+            <Button text='Shop Now' transparent={false} />
+            <div className='play_section'>
+              <IoIosPlay />
+              <p>How to use</p>
+            </div>
+          </ButtonGrid>
         </HeroContent>
         <img src={lady1} alt='' />
       </HeroGrid>

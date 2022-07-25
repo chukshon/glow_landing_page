@@ -12,11 +12,6 @@ export const HeroGrid = styled.div`
 export const HeroContent = styled.div`
   margin-top: 1rem;
   h2 {
-    font-size: 4rem;
-    font-family: var(--ff-shippori);
-    color: var(--deep-blue);
-    font-weight: 500;
-    letter-spacing: -1px;
     img {
       display: inline-block;
       padding: 0;
@@ -24,12 +19,15 @@ export const HeroContent = styled.div`
       height: 90px;
     }
   }
-  p {
-    color: var(--grey);
-    font-family: var(--ff-roboto);
-    font-weight: 400;
-    font-size: 0.9rem;
-    padding: 20px 0px;
-    line-height: 1.5;
+`
+export const ButtonGrid = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  .play_section {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
   }
 `

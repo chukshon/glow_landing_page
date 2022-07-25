@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
 export const Wrapper = styled.div`
   margin-top: -100px;
@@ -20,7 +21,7 @@ export const StyledDetails = styled.div`
   padding-top: 150px;
   padding-bottom: 100px;
 `
-export const StyledContents = styled.div`
+export const StyledContents = styled(motion.div)`
   width: 500px;
   h1 {
     color: var(--deep-blue);
@@ -119,7 +120,7 @@ export const TopImage = styled.div`
     }
   }
 `
-export const SideImage = styled.div`
+export const SideImage = styled(motion.div)`
   position: absolute;
   width: 380px;
   height: 450px;

@@ -5,10 +5,10 @@ export const quickLinkData = [
   },
   {
     name: 'Resources',
-    links: ['About', 'Jobs', 'Branding', 'Newsroom'],
+    links: ['College', 'Support', 'Safety', 'StreamKit'],
   },
   {
     name: 'Terms & Conditions',
-    links: ['About', 'Jobs', 'Branding', 'Newsroom'],
+    links: ['Policy', 'Faq', 'Return & Delivery', 'Tracking'],
   },
 ]

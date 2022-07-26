@@ -1,13 +1,12 @@
-import React from 'react'
 import { Wrapper, IconGroup, Icons } from './style'
-import product1 from '../../assets/images/product1.png'
 import { IoBagOutline, IoHeartOutline } from 'react-icons/io5'
 import { fadeLeft } from '../../utils/variants'
+import { ProductType } from '../../utils/productsData'
 
-const Product = () => {
+const Product = ({ image, name, price }: ProductType) => {
   return (
     <Wrapper variants={fadeLeft} viewport={{ once: true }}>
-      <img src={product1} alt='' />
+      <img src={image} alt='' />
       <IconGroup>
         <Icons>
           <IoBagOutline />
@@ -16,8 +15,8 @@ const Product = () => {
           <IoHeartOutline />
         </Icons>
       </IconGroup>
-      <h2>Shower Butter</h2>
-      <p>$190.99</p>
+      <h2>{name}</h2>
+      <p>{price}</p>
     </Wrapper>
   )
 }

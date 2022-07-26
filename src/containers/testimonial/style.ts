@@ -25,6 +25,9 @@ export const Container = styled(motion.div)`
     margin-top: 30px;
     margin-bottom: 30px;
     max-width: 400px;
+    color: var(--deep-blue);
+    font-family: var(--ff-shippori);
+    font-weight: 400;
   }
 
   img {

@@ -13,14 +13,14 @@ const Testimonial = () => {
         initial='initial'
         whileInView='whileInView'
       >
-        <ImQuotesLeft />
+        <ImQuotesLeft size='4rem' style={{ color: 'var(--orange)' }} />
         <h3>
           The UK jewellery awards is an event we always look forward to and we
           are so honoured to be recognised.
         </h3>
 
-        <h5>Jane Cooper</h5>
-        <p>Naperville, USA</p>
+        <h2 className='h3'>Jane Cooper</h2>
+        <p className='p grey_p'>Naperville, USA</p>
         <motion.img
           variants={zoomIn}
           initial='initial'

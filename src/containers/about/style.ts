@@ -93,7 +93,7 @@ export const SideImage = styled(motion.div)`
   }
 `
 
-export const StyledStar = styled.div`
+export const StyledStar = styled(motion.div)`
   position: absolute;
   clip-path: polygon(
     50% 0%,

@@ -63,7 +63,10 @@ const About = () => {
         </SideImage>
       </StyledDetails>
       <TopImage>
-        <StyledStar>
+        <StyledStar
+          animate={{ rotate: 360 }}
+          transition={{ ease: 'linear', duration: 5, repeat: Infinity }}
+        >
           <StyledInner>
             <h1 style={{ color: 'white' }}>New</h1>
           </StyledInner>

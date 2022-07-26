@@ -1,4 +1,3 @@
-import React from 'react'
 import {
   Wrapper,
   FooterGrid,
@@ -13,12 +12,7 @@ import {
 
 import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa'
 import { FiSend } from 'react-icons/fi'
-import {
-  fadeUp,
-  zoomIn,
-  fadeLeft,
-  staggerContainer,
-} from '../../utils/variants'
+import { fadeUp, staggerContainer } from '../../utils/variants'
 
 const Footer = () => {
   return (

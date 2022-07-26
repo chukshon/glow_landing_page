@@ -1,14 +1,19 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Wrapper } from './style'
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai'
 import { accordionDropDown, fadeUp } from '../../utils/variants'
 import { AnimatePresence, motion } from 'framer-motion'
-const Accordion = () => {
+
+type AccordionProps = {
+  title: string
+  description: string
+}
+const Accordion = ({ title, description }: AccordionProps) => {
   const [showInfo, setShowInfo] = useState<boolean>(false)
   return (
     <Wrapper variants={fadeUp}>
       <div className='title' onClick={() => setShowInfo(!showInfo)}>
-        <h3 className='h3'>Where are products made?</h3>
+        <h3 className='h3'>{title}</h3>
         {showInfo ? <AiOutlineMinus /> : <AiOutlinePlus />}
       </div>
       <AnimatePresence>
@@ -20,8 +25,7 @@ const Accordion = () => {
             animate='animate'
             exit='initial'
           >
-            Many brands,especially in period care,carry products that take
-            centuries to biodegrade with pronounce.
+            {description}
           </motion.p>
         )}
       </AnimatePresence>

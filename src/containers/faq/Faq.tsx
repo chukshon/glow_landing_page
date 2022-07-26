@@ -27,7 +27,13 @@ const Faq = () => {
           whileInView='whileInView'
         >
           {accordionData.map((accordion) => {
-            return <Accordion key={accordion.id} />
+            return (
+              <Accordion
+                key={accordion.id}
+                title={accordion.title}
+                description={accordion.description}
+              />
+            )
           })}
         </motion.ul>
       </StyledAccordion>

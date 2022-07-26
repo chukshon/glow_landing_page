@@ -7,13 +7,7 @@ import {
   SideImg,
 } from './style'
 import test from '../../assets/images/test.jpeg'
-import {
-  fadeUp,
-  zoomIn,
-  fadeLeft,
-  staggerContainer,
-} from '../../utils/variants'
-import { motion } from 'framer-motion'
+import { fadeUp, zoomIn, fadeLeft } from '../../utils/variants'
 const Stats = () => {
   return (
     <Wrapper>

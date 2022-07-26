@@ -1,11 +1,9 @@
-import React from 'react'
 import { Wrapper, Container } from './style'
 import { ImQuotesLeft } from 'react-icons/im'
 import test from '../../assets/images/test.jpeg'
-import Slider from 'react-slick'
+
 import { fadeLeft, zoomIn } from '../../utils/variants'
 import { motion } from 'framer-motion'
-// Import Swiper React components
 
 const Testimonial = () => {
   return (

@@ -10,6 +10,7 @@ const Portfolio = () => {
       variants={staggerContainer}
       initial='initial'
       whileInView='whileInView'
+      viewport={{ once: true }}
     >
       {array.map((e, i) => {
         return <PortfolioCard key={i} />

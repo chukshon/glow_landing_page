@@ -16,6 +16,7 @@ const Stats = () => {
           variants={fadeUp}
           initial='initial'
           whileInView='whileInView'
+          viewport={{ once: true }}
         >
           <h2 className='h2'>
             We make going all <br />
@@ -32,6 +33,7 @@ const Stats = () => {
           variants={fadeLeft}
           initial='initial'
           whileInView='whileInView'
+          viewport={{ once: true }}
         >
           <div className='stats'>
             <h3>
@@ -55,7 +57,12 @@ const Stats = () => {
             <h1>5M</h1>
           </div>
         </StyledStats>
-        <SideImg variants={zoomIn} initial='initial' whileInView='whileInView'>
+        <SideImg
+          variants={zoomIn}
+          initial='initial'
+          whileInView='whileInView'
+          viewport={{ once: true }}
+        >
           <img src={test} alt='' />
         </SideImg>
       </StyledContainer>

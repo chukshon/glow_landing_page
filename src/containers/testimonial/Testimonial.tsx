@@ -1,6 +1,5 @@
 import { Wrapper, Container } from './style'
 import { ImQuotesLeft } from 'react-icons/im'
-import test from '../../assets/images/test.jpeg'
 
 import { fadeLeft, zoomIn } from '../../utils/variants'
 import { motion } from 'framer-motion'
@@ -68,7 +67,8 @@ const Testimonial = () => {
                 variants={zoomIn}
                 initial='initial'
                 whileInView='whileInView'
-                src={test}
+                viewport={{ once: true }}
+                src={data.image}
                 alt=''
               />
             </Container>

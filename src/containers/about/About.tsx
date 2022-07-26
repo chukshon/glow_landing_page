@@ -20,6 +20,7 @@ const About = () => {
           variants={fadeUp}
           initial='initial'
           whileInView='whileInView'
+          viewport={{ once: true }}
         >
           <h1 className='h2'>
             The self care brand that's

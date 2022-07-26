@@ -9,7 +9,7 @@ export const fadeUp: Variants = {
     y: 0,
     opacity: 1,
     transition: {
-      duration: 0.3,
+      duration: 0.7,
       ease: 'easeInOut',
     },
   },
@@ -35,6 +35,21 @@ export const fadeLeft: Variants = {
   },
   whileInView: {
     x: '0px',
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+      ease: 'easeInOut',
+    },
+  },
+}
+
+export const fadeDown: Variants = {
+  initial: {
+    y: '-50px',
+    opacity: 0,
+  },
+  whileInView: {
+    y: '0px',
     opacity: 1,
     transition: {
       duration: 0.5,

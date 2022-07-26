@@ -24,6 +24,7 @@ const Accordion = ({ title, description }: AccordionProps) => {
             initial='initial'
             animate='animate'
             exit='initial'
+            viewport={{ once: true }}
           >
             {description}
           </motion.p>

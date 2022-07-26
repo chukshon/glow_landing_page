@@ -11,6 +11,7 @@ const Trending = () => {
       variants={staggerContainer}
       initial='initial'
       whileInView='whileInView'
+      viewport={{ once: true }}
     >
       <Content variants={fadeUp} initial='initial' whileInView='whileInView'>
         <h2 className='h2'>

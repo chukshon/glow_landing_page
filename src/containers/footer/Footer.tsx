@@ -22,6 +22,7 @@ const Footer = () => {
         variants={staggerContainer}
         initial='initial'
         whileInView='whileInView'
+        viewport={{ once: true }}
       >
         <ContactCol variants={fadeUp}>
           <FooterLogo>

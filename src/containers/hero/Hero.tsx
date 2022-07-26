@@ -5,13 +5,19 @@ import lady1 from '../../assets/images/lady1.png'
 import heroImg from '../../assets/images/heroImg.png'
 import Button from '../../components/button/Button'
 import { IoIosPlay } from 'react-icons/io'
+import { fadeUp } from '../../utils/variants'
 
 const Hero = () => {
   return (
     <Wrapper>
       <NavBar />
       <HeroGrid>
-        <HeroContent>
+        <HeroContent
+          variants={fadeUp}
+          initial='initial'
+          whileInView='whileInView'
+          viewport={{ once: true }}
+        >
           <h2 className='h1'>
             Let your skin
             <br /> Going

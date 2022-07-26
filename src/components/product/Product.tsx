@@ -6,7 +6,7 @@ import { fadeLeft } from '../../utils/variants'
 
 const Product = () => {
   return (
-    <Wrapper variants={fadeLeft}>
+    <Wrapper variants={fadeLeft} viewport={{ once: true }}>
       <img src={product1} alt='' />
       <IconGroup>
         <Icons>

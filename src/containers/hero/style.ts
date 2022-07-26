@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
@@ -15,13 +16,13 @@ export const Wrapper = styled.div`
     padding: 30px 100px;
   }
 `
-export const HeroGrid = styled.div`
+export const HeroGrid = styled(motion.div)`
   padding-top: 4rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
 `
 
-export const HeroContent = styled.div`
+export const HeroContent = styled(motion.div)`
   margin-top: 1rem;
   h2 {
     img {

@@ -17,7 +17,7 @@ export const Wrapper = styled.div`
   justify-content: flex-end;
 `
 export const StyledDetails = styled(motion.div)`
-  width: 800px;
+  width: 900px;
   position: relative;
   background-color: #f1e3ef;
   display: flex;

@@ -3,12 +3,6 @@ import { motion } from 'framer-motion'
 
 export const Wrapper = styled.div`
   margin-top: 200px;
-  @media (min-width: 1200px) {
-    max-width: 1300px;
-    width: 100%;
-    margin: 100px auto;
-    padding: 30px 100px;
-  }
 `
 export const StyledContainer = styled.div`
   width: 900px;
@@ -17,6 +11,9 @@ export const StyledContainer = styled.div`
   padding-bottom: 100px;
   padding-left: 100px;
   position: relative;
+  @media (max-width: 1100px) {
+    width: 700px;
+  }
 `
 
 export const StyledContent = styled(motion.div)`

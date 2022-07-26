@@ -17,6 +17,9 @@ export const Container = styled(motion.div)`
   background-color: var(--white);
   max-width: 900px;
   padding: 50px 0px 50px 40px;
+  @media (max-width: 1100px) {
+    max-width: 600px;
+  }
 
   h3 {
     margin-top: 30px;

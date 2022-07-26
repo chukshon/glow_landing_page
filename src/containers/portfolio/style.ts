@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 export const Wrapper = styled(motion.div)`
   padding: 50px 100px;
   display: flex;
+  flex-wrap: wrap;
   gap: 1.3rem;
   @media (min-width: 1200px) {
     max-width: 1300px;

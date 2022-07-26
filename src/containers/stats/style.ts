@@ -14,6 +14,9 @@ export const StyledContainer = styled.div`
   @media (max-width: 1100px) {
     width: 700px;
   }
+  @media (min-width: 1500px) {
+    width: 70%;
+  }
 `
 
 export const StyledContent = styled(motion.div)`

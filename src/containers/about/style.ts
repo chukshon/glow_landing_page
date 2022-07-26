@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
     margin: -100px auto;
   }
   @media (min-width: 1300px) {
-    max-width: 1300px;
+    /* max-width: 1300px; */
     width: 100%;
     margin: -100px auto;
   }
@@ -28,6 +28,9 @@ export const StyledDetails = styled(motion.div)`
   padding-bottom: 100px;
   @media (max-width: 1100px) {
     width: 700px;
+  }
+  @media (min-width: 1500px) {
+    width: 70%;
   }
 `
 export const StyledContents = styled(motion.div)`

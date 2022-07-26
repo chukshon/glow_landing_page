@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { motion } from 'framer-motion'
 
 export const Wrapper = styled(motion.div)`
-  margin-top: 100px;
+  margin-top: 200px;
   display: grid;
   grid-template-columns: 400px 400px 400px;
   row-gap: 5.5rem;
@@ -11,7 +11,7 @@ export const Wrapper = styled(motion.div)`
   @media (min-width: 1200px) {
     max-width: 1300px;
     width: 100%;
-    margin: 100px auto;
+    margin: 200px auto;
     padding: 30px 100px;
   }
   @media (max-width: 1290px) {

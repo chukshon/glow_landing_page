@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 export const Wrapper = styled.div`
   padding: 150px 100px 40px 100px;
-  margin-top: -100px;
+  margin-top: -180px;
   background-color: var(--deep-blue);
 `
 export const FooterGrid = styled(motion.div)`
@@ -49,6 +49,7 @@ export const SocialLinks = styled.div`
   align-items: center;
   gap: 0.7rem;
   color: var(--white);
+  cursor: pointer;
 `
 
 export const QuickLinks = styled(motion.div)`
@@ -56,10 +57,12 @@ export const QuickLinks = styled(motion.div)`
   color: var(--white);
   flex-direction: column;
   gap: 1rem;
+  cursor: pointer;
   h3 {
     font-family: var(--ff-roboto);
     font-size: 1rem;
     font-weight: 400;
+    cursor: pointer;
   }
   ul {
     display: flex;
@@ -67,7 +70,13 @@ export const QuickLinks = styled(motion.div)`
     gap: 1.5rem;
     font-family: var(--ff-roboto);
     font-size: 0.85rem;
+    cursor: pointer;
     font-weight: 300;
+    li {
+      &:hover {
+        color: var(--orange);
+      }
+    }
   }
 `
 export const Subscribe = styled(motion.div)`
@@ -76,6 +85,10 @@ export const Subscribe = styled(motion.div)`
   gap: 1rem;
   color: var(--white);
   font-family: var(--ff-roboto);
+
+  input {
+    color: var(--white);
+  }
   h3 {
     font-weight: 400;
     font-size: 1rem;
@@ -92,7 +105,7 @@ export const StyledForm = styled.div`
   align-items: center;
   border-radius: 50px;
   padding-left: 20px;
-  padding-right: 5px;
+  padding-right: 2px;
   font-family: var(--ff-roboto);
   input {
     border: none;

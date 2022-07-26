@@ -9,7 +9,7 @@ export const fadeUp: Variants = {
     y: 0,
     opacity: 1,
     transition: {
-      duration: 0.5,
+      duration: 0.3,
       ease: 'easeInOut',
     },
   },
@@ -30,11 +30,11 @@ export const accordionDropDown: Variants = {
 
 export const fadeLeft: Variants = {
   initial: {
-    x: 50,
+    x: '-100px',
     opacity: 0,
   },
   whileInView: {
-    x: 0,
+    x: '0px',
     opacity: 1,
     transition: {
       duration: 0.5,
@@ -60,7 +60,7 @@ export const staggerContainer: Variants = {
   initial: {},
   whileInView: {
     transition: {
-      staggerChildren: 0.2,
+      staggerChildren: 0.3,
       delayChildren: 0.3,
     },
   },

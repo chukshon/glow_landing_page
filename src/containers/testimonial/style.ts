@@ -10,6 +10,11 @@ export const Wrapper = styled(motion.div)`
     margin: 100px auto;
     padding: 50px 100px;
   }
+  .slick-dots .slick-active {
+    background: var(--orange);
+    width: 15px;
+    height: 15px;
+  }
 `
 
 export const Container = styled(motion.div)`

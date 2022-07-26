@@ -25,7 +25,6 @@ export const Container = styled(motion.div)`
   @media (max-width: 1100px) {
     max-width: 600px;
   }
-
   h3 {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -39,8 +38,8 @@ export const Container = styled(motion.div)`
     position: absolute;
     border: 5px solid #f9f3ee;
     border-radius: 50%;
-    width: 230px;
-    height: 230px;
+    width: 300px;
+    height: 300px;
     right: -100px;
     top: 30px;
   }

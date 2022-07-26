@@ -3,6 +3,12 @@ import { motion } from 'framer-motion'
 
 export const Wrapper = styled.div`
   margin-top: 200px;
+  @media (min-width: 1200px) {
+    max-width: 1300px;
+    width: 100%;
+    margin: 100px auto;
+    padding: 30px 100px;
+  }
 `
 export const StyledContainer = styled.div`
   width: 900px;
@@ -14,24 +20,16 @@ export const StyledContainer = styled.div`
 `
 
 export const StyledContent = styled(motion.div)`
-  h1 {
-    font-family: var(--ff-shippori);
-    font-size: 2.4rem;
-    font-weight: 500;
-    span {
-      color: var(--orange);
-    }
+  span {
+    color: var(--orange);
   }
   p {
-    color: var(--grey);
-    font-family: var(--ff-roboto);
-    font-weight: 300;
-    font-size: 0.9rem;
-    margin: 30px 0px;
+    margin: 10px 0px;
   }
 `
 
 export const StyledStats = styled(motion.div)`
+  margin-top: 50px;
   display: flex;
   align-items: center;
   gap: 1rem;

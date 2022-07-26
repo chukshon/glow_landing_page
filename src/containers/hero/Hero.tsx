@@ -18,7 +18,7 @@ const Hero = () => {
             <img src={heroImg} alt='' />
             Out.
           </h2>
-          <p className='grey_p'>
+          <p className='p grey_p'>
             We want to bring to the world through our
             <br /> products that very special feeling joy, healthy and
             <br /> positive energy.
@@ -27,7 +27,7 @@ const Hero = () => {
             <Button text='Shop Now' transparent={false} />
             <div className='play_section'>
               <IoIosPlay />
-              <p>How to use</p>
+              <p className='p deep_blue_p'>How to use</p>
             </div>
           </ButtonGrid>
         </HeroContent>

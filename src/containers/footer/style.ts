@@ -9,6 +9,12 @@ export const Wrapper = styled.div`
 export const FooterGrid = styled(motion.div)`
   display: flex;
   justify-content: space-between;
+  @media (min-width: 1400px) {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 100px;
+  }
 `
 
 export const ContactCol = styled(motion.div)`

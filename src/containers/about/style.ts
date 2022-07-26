@@ -2,6 +2,15 @@ import styled from 'styled-components'
 import { motion } from 'framer-motion'
 
 export const Wrapper = styled.div`
+  @media (max-width: 1200px) {
+    width: 100%;
+    margin: -100px auto;
+  }
+  @media (min-width: 1300px) {
+    max-width: 1300px;
+    width: 100%;
+    margin: -100px auto;
+  }
   margin-top: -100px;
   display: flex;
   position: relative;
@@ -17,15 +26,13 @@ export const StyledDetails = styled(motion.div)`
   justify-content: center;
   padding-top: 150px;
   padding-bottom: 100px;
+  @media (max-width: 1100px) {
+    width: 700px;
+  }
 `
 export const StyledContents = styled(motion.div)`
   width: 500px;
   h1 {
-    color: var(--deep-blue);
-    font-family: var(--shippori);
-    font-weight: 400;
-    font-size: 2.5rem;
-    line-height: 1.3;
     span {
       color: var(--orange);
     }
@@ -38,24 +45,7 @@ export const StyledGrid = styled.div`
   gap: 1.3rem;
 `
 
-export const StyledCol = styled.div`
-  h3 {
-    font-family: var(--ff-roboto);
-    font-weight: 400;
-    color: var(--deep-blue);
-    line-height: 1.2;
-    font-size: 1rem;
-  }
-  p {
-    font-family: var(--ff-roboto);
-    max-width: 200px;
-    margin-top: 20px;
-    color: #837b84;
-    font-size: 0.8rem;
-    font-weight: 400;
-    line-height: 1.3;
-  }
-`
+export const StyledCol = styled.div``
 export const TopImage = styled.div`
   position: absolute;
   top: -50px;

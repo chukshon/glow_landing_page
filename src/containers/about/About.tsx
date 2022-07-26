@@ -21,7 +21,7 @@ const About = () => {
           initial='initial'
           whileInView='whileInView'
         >
-          <h1>
+          <h1 className='h2'>
             The self care brand that's
             <br /> setting a new
             <span>
@@ -32,21 +32,21 @@ const About = () => {
           </h1>
           <StyledGrid>
             <StyledCol>
-              <h3>
+              <h3 className='h3'>
                 Where are Products
                 <br /> Made
               </h3>
-              <p>
+              <p className='p grey_p'>
                 Many brands,especially in period
                 <br /> care,carry products that take centuries.
               </p>
             </StyledCol>
             <StyledCol>
-              <h3>
+              <h3 className='h3'>
                 Where are Products
                 <br /> Made
               </h3>
-              <p>
+              <p className='p grey_p'>
                 Many brands,especially in period
                 <br /> care,carry products that take centuries.
               </p>

@@ -13,10 +13,10 @@ const Trending = () => {
       whileInView='whileInView'
     >
       <Content variants={fadeUp} initial='initial' whileInView='whileInView'>
-        <h1>
+        <h2 className='h2'>
           Trending On <span>Essentials</span>
-        </h1>
-        <p>
+        </h2>
+        <p className='p grey_p'>
           Made with nature's best ingredients our products'transparent
           ingredient.Fear of God Essentials.
         </p>

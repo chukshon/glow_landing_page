@@ -5,6 +5,12 @@ export const Wrapper = styled(motion.div)`
   padding: 100px 100px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  @media (min-width: 1200px) {
+    max-width: 1300px;
+    width: 100%;
+    margin: 100px auto;
+    padding: 30px 100px;
+  }
 `
 
 export const StyledImg = styled(motion.div)`
@@ -14,14 +20,8 @@ export const StyledImg = styled(motion.div)`
   }
 `
 export const StyledAccordion = styled(motion.div)`
-  h1 {
-    font-size: 2.5rem;
-    font-family: var(--ff-shippori);
-    font-weight: 500;
-    color: var(--deep-blue);
-    span {
-      color: var(--orange);
-    }
+  span {
+    color: var(--orange);
   }
   ul {
     margin-top: 50px;

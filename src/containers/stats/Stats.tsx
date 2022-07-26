@@ -23,11 +23,11 @@ const Stats = () => {
           initial='initial'
           whileInView='whileInView'
         >
-          <h1>
+          <h2 className='h2'>
             We make going all <br />
             natural <span>Beauty</span>.
-          </h1>
-          <p>
+          </h2>
+          <p className='p grey_p'>
             Made with nature's best ingredients ingredient - our
             products'transparent
             <br />

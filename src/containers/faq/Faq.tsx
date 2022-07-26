@@ -12,14 +12,15 @@ const Faq = () => {
         <img src={faqImg} alt='' />
       </StyledImg>
       <StyledAccordion>
-        <motion.h1
+        <motion.h2
           variants={fadeUp}
           initial='initial'
           whileInView='whileInView'
+          className='h2'
         >
-          You have <span>questions,</span>
+          You have <span>Questions,</span>
           <br /> we have answers.
-        </motion.h1>
+        </motion.h2>
         <motion.ul
           variants={staggerContainer}
           initial='initial'

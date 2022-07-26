@@ -30,7 +30,7 @@ export const accordionDropDown: Variants = {
 
 export const fadeLeft: Variants = {
   initial: {
-    x: '-100px',
+    x: '-8px',
     opacity: 0,
   },
   whileInView: {

@@ -20,7 +20,7 @@ export const Wrapper = styled(motion.div)`
 export const Container = styled(motion.div)`
   position: relative;
   background-color: var(--white);
-  max-width: 900px;
+  max-width: 950px;
   padding: 50px 0px 50px 40px;
   @media (max-width: 1100px) {
     max-width: 600px;

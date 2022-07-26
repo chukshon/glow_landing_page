@@ -5,7 +5,7 @@ import test from '../../assets/images/test.jpeg'
 import { fadeLeft, zoomIn } from '../../utils/variants'
 import { motion } from 'framer-motion'
 import Slider from 'react-slick'
-
+import { testimonialData } from '../../utils/testimonialData'
 const Testimonial = () => {
   const settings = {
     dots: true,
@@ -50,69 +50,30 @@ const Testimonial = () => {
   return (
     <Wrapper>
       <Slider {...settings}>
-        <Container
-          variants={fadeLeft}
-          initial='initial'
-          whileInView='whileInView'
-        >
-          <ImQuotesLeft size='4rem' style={{ color: 'var(--orange)' }} />
-          <h3>
-            The UK jewellery awards is an event we always look forward to and we
-            are so honoured to be recognised.
-          </h3>
+        {testimonialData.map((data, index) => {
+          return (
+            <Container
+              variants={fadeLeft}
+              initial='initial'
+              whileInView='whileInView'
+              viewport={{ once: true }}
+              key={index}
+            >
+              <ImQuotesLeft size='4rem' style={{ color: 'var(--orange)' }} />
+              <h3>{data.description}</h3>
 
-          <h2 className='h3'>Jane Cooper</h2>
-          <p className='p grey_p'>Naperville, USA</p>
-          <motion.img
-            variants={zoomIn}
-            initial='initial'
-            whileInView='whileInView'
-            src={test}
-            alt=''
-          />
-        </Container>
-        <Container
-          variants={fadeLeft}
-          initial='initial'
-          whileInView='whileInView'
-        >
-          <ImQuotesLeft size='4rem' style={{ color: 'var(--orange)' }} />
-          <h3>
-            The UK jewellery awards is an event we always look forward to and we
-            are so honoured to be recognised.
-          </h3>
-
-          <h2 className='h3'>Jane Cooper</h2>
-          <p className='p grey_p'>Naperville, USA</p>
-          <motion.img
-            variants={zoomIn}
-            initial='initial'
-            whileInView='whileInView'
-            src={test}
-            alt=''
-          />
-        </Container>
-        <Container
-          variants={fadeLeft}
-          initial='initial'
-          whileInView='whileInView'
-        >
-          <ImQuotesLeft size='4rem' style={{ color: 'var(--orange)' }} />
-          <h3>
-            The UK jewellery awards is an event we always look forward to and we
-            are so honoured to be recognised.
-          </h3>
-
-          <h2 className='h3'>Jane Cooper</h2>
-          <p className='p grey_p'>Naperville, USA</p>
-          <motion.img
-            variants={zoomIn}
-            initial='initial'
-            whileInView='whileInView'
-            src={test}
-            alt=''
-          />
-        </Container>
+              <h2 className='h3'>{data.name}</h2>
+              <p className='p grey_p'>{data.location}</p>
+              <motion.img
+                variants={zoomIn}
+                initial='initial'
+                whileInView='whileInView'
+                src={test}
+                alt=''
+              />
+            </Container>
+          )
+        })}
       </Slider>
     </Wrapper>
   )

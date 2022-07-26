@@ -13,6 +13,7 @@ import {
 import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa'
 import { FiSend } from 'react-icons/fi'
 import { fadeUp, staggerContainer } from '../../utils/variants'
+import { quickLinkData } from '../../utils/quickLinkData'
 
 const Footer = () => {
   return (
@@ -39,33 +40,19 @@ const Footer = () => {
             <FaLinkedin />
           </SocialLinks>
         </ContactCol>
-        <QuickLinks variants={fadeUp}>
-          <h3>Company</h3>
-          <ul>
-            <li>About</li>
-            <li>Jobs</li>
-            <li>Branding</li>
-            <li>Newsroom</li>
-          </ul>
-        </QuickLinks>
-        <QuickLinks variants={fadeUp}>
-          <h3>Resources</h3>
-          <ul>
-            <li>About</li>
-            <li>Jobs</li>
-            <li>Branding</li>
-            <li>Newsroom</li>
-          </ul>
-        </QuickLinks>
-        <QuickLinks variants={fadeUp}>
-          <h3>Terms &amp; Condition</h3>
-          <ul>
-            <li>About</li>
-            <li>Jobs</li>
-            <li>Branding</li>
-            <li>Newsroom</li>
-          </ul>
-        </QuickLinks>
+
+        {quickLinkData.map((data, index) => {
+          return (
+            <QuickLinks variants={fadeUp} key={index}>
+              <h3>{data.name}</h3>
+              <ul>
+                {data.links.map((link, index) => {
+                  return <li key={index}>{link}</li>
+                })}
+              </ul>
+            </QuickLinks>
+          )
+        })}
         <Subscribe variants={fadeUp}>
           <h3>Subscribe</h3>
           <p>Get 10% off your first order</p>
